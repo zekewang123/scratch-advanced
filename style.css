@@ -1,0 +1,70 @@
+:root { font-family: Arial, system-ui, -apple-system, "Noto Sans TC"; }
+
+body {
+  margin: 0;
+  padding: 24px 12px 40px;
+  text-align: center;
+  background: #f7f7f7;
+}
+
+h1 { margin: 0 0 12px; }
+
+.panel {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+input {
+  width: 160px;
+  padding: 10px 12px;
+  font-size: 16px;
+}
+
+button {
+  padding: 10px 14px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.status {
+  min-height: 24px;
+  margin: 14px 0 6px;
+  font-weight: bold;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(5, 74px);
+  gap: 10px;
+  justify-content: center;
+  margin: 10px auto 0;
+  max-width: 420px;
+}
+
+.card {
+  position: relative;
+  width: 74px;
+  height: 74px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0,0,0,.08);
+}
+
+.number {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  background: #f6c343;
+  font-size: 26px;
+  font-weight: 800;
+}
+
+canvas {
+  position: absolute;
+  inset: 0;
+  touch-action: none; /* 手機很重要：避免滑動頁面 */
+}
