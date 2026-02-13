@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>數字刮刮樂</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>🎉 數字刮刮樂 🎉</h1>
+
+  <div class="panel">
+    <input id="userNumber" type="number" min="1" max="10"
+           inputmode="numeric" placeholder="輸入 1~10" />
+    <button id="startBtn">開始刮</button>
+  </div>
+
+  <p id="status" class="status"></p>
+
+  <div id="grid" class="grid" aria-label="scratch grid"></div>
+
+  <script type="module" src="script.js"></script>
+</body>
+</html>
